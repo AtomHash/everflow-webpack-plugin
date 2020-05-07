@@ -1,0 +1,21 @@
+{
+  "name": "everflow-webpack-plugin",
+  "version": "0.1.0-alpha.1",
+  "description": "Webpack script loader for everflow development.",
+  "main": "./index.js",
+  "author": "AtomHash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomHash/everflow-webpack-plugin.git"
+  },
+  "keywords": [
+    "everflow",
+    "config",
+    "webpack"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AtomHash/everflow-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/AtomHash/everflow-webpack-plugin#readme"
+}
