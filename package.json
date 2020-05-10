@@ -1,6 +1,6 @@
 {
   "name": "everflow-webpack-plugin",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "Webpack script loader for everflow development.",
   "main": "./index.js",
   "author": "AtomHash",

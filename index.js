@@ -203,17 +203,19 @@ class EverflowWebpackPlugin {
         {
             const srcLocalesPath = path.join(appPath, everflowI18nFolder, 'evgen');
             const distLocalesPath = path.join(distPath, everflowI18nFolder);
-
-            // Just remove the old files.
-            const oldFiles = fs.readdirSync(srcLocalesPath);
-            oldFiles.forEach(function(file){
-                fs.unlinkSync(path.join(srcLocalesPath, file));
-            })
             
             // Make sure the dist(publish) folder exists
             if(!fs.existsSync(distPath))
             {
                 fs.mkdirSync(distPath);
+            }
+            if(!fs.existsSync(path.join(appPath, everflowI18nFolder)))
+            {
+                fs.mkdirSync(path.join(appPath, everflowI18nFolder));
+            }
+            if(!fs.existsSync(path.join(appPath, everflowI18nFolder, 'evgen')))
+            {
+                fs.mkdirSync(path.join(appPath, everflowI18nFolder, 'evgen'));
             }
             let everflowModules = getModules();
             // Tell the user about their i18n support... because why not...
