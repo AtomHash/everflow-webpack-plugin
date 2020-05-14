@@ -3,8 +3,6 @@ const fs = require('fs-extra');
 const path = require('path');
 const merge = require('deepmerge');
 
-//const CopyWebpackPlugin = require('copy-webpack-plugin');
-
 class EverflowWebpackPlugin {
 
     constructor(options =   {}) {
@@ -74,7 +72,6 @@ class EverflowWebpackPlugin {
                 allLocales: [],
                 modules: []
             };
-            //a.filter( onlyUnique ); 
             for (let folder of fs.readdirSync(srcModulesPath))
             {
                 let modulePath = path.join(srcModulesPath, folder);
