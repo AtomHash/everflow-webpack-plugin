@@ -23,7 +23,7 @@ class EverflowWebpackPlugin {
     apply(compiler) {
         const distPath = compiler.options.output.path;
         const appPath = compiler.options.resolve.alias['@'];
-        const everflowI18nFolder = 'i18n';
+        const everflowI18nFolder = 'locales';
 
         const camelCase = function(str)
         {
